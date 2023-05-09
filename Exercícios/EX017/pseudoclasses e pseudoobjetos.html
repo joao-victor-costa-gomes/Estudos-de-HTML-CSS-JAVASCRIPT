@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes e Pseudo-objetos</title>
+</head>
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: darkblue
+    }
+
+    a:active{
+        color: yellow;
+    }
+
+    a:visited{
+        color: green;
+    }
+
+    a::after{
+        content: ' [link]'; 
+        color: lightgray;
+    }
+  
+    a::before{
+        content: '--> '
+    }
+
+    p#id01::first-letter{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: darkblue
+    }
+
+    p#id02::first-line{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: darkred
+    }
+
+</style>
+
+<body>
+    <h3>Listas de links:</h3>
+
+    <ul>
+        <li> <a href="https://www.youtube.com/@CursoemVideo" target="_blank">Canal do curso em vídeo</a> </li>
+        <li> <a href="https://www.cursoemvideo.com/" target="_blank">Site do curso em vídeo</a> </li>
+        <li> <a href="https://github.com/cursoemvideo" target="_blank">Github do GustavoGuanabara</a> </li>
+    </ul>
+
+
+    <p id="id01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa expedita est illum omnis ipsam voluptatum quis commodi consectetur officiis, architecto delectus at. Officiis optio praesentium quo, veniam non illo accusamus.</p>
+
+    <br>
+
+    <p id="id02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa expedita est illum omnis ipsam voluptatum quis commodi consectetur officiis, architecto delectus at. Officiis optio praesentium quo, veniam non illo accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eum asperiores sequi, minus natus amet! Impedit, consectetur. Corporis, voluptas qui magni, exercitationem inventore consequuntur reiciendis sed doloribus laboriosam rerum ut.</p>
+
+</body>
+</html>
